@@ -11,7 +11,10 @@ class Main {
 		int i = 2;
 		while(i<number){
 			if(number%i == 0){
-				isPrime = false;	
+				// System.out.println("composite");
+				//return ;
+				isPrime = false;
+				return;
 			}
 			i+=1;
 		}
