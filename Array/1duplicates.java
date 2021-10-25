@@ -25,3 +25,23 @@ public class MyClass {
         System.out.println(dup);
     }
 }
+
+/* using Xor 
+
+*/
+public class MyClass {
+    public static int duplicate(int[] arr){
+        int ele = 0;
+        
+        for(int i=0; i< arr.length; i++){
+            ele = ele ^ arr[i]    ;
+        }
+        
+        return ele;
+    }
+    public static void main(String args[]) {
+        int[] arr = {0,1, 3, 3, 1, 4, 6, 5, 4, 6, 5};
+        int dup = duplicate(arr);
+        System.out.println(dup);
+    }
+}
