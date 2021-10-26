@@ -1,6 +1,7 @@
 /* jdoodle online java compiler
-
+Time complexity of this approach is O(N^2)
 */
+
 import java.util.Scanner;
 
 public class MyClass {
@@ -31,5 +32,25 @@ public class MyClass {
         }
         int unique = uniqueElement(arr);
         System.out.println(unique);
+    }
+}
+
+
+/*
+Time complexity of this approach is O(N)
+*/
+public class MyClass {
+    public static int duplicate(int[] arr){
+        int N = arr.length;
+        int ans = 0;
+        for(int i=0; i<N; i++){
+            ans = ans^arr[i];
+        }
+        return ans;
+    }
+    public static void main(String args[]) {
+        int[] arr = {1, 2, 3, 4, 4, 1, 2};
+        int dup = duplicate(arr);
+        System.out.println(dup);
     }
 }
