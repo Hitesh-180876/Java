@@ -17,7 +17,7 @@ class Main {
 			System.out.println("-1");
 		}
 
-		System.out.println(c);
+		System.out.print(c);
 
 	}
 }
